@@ -7,6 +7,14 @@
     --blue00: #005383;
 }
 
+a{
+    text-decoration: none !important;
+}
+
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
 
 .loader-wrapper {
     width: 100%;
@@ -132,14 +140,10 @@
 .banner {
     background: url(../img/banner.jpg);
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 70vh;
     background-position: center;
 }
 
-.container {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-}
 
 
 .left-address {
@@ -154,8 +158,21 @@
     background-color: var(--yellowd3);
 }
 
+.menu__list a {
+    color: #fff;
+    font-weight: 600;
+}
+
 .menu__list a:hover {
     color: var(--yellowd3);
+}
+
+.text-opacity-70 {
+    opacity: 0.7;
+}
+
+.block a {
+    font-weight: 600;
 }
 
 /*================= Search ================== */
@@ -249,5 +266,269 @@
 }
 
 .vehicles {
+    padding-bottom: 100px;
+}
+
+.top-info-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.name-news {
+    text-align: left;
+}
+
+.name-news span  {
+    font-weight: 600;
+    font-size: 22px;
+    color: #222222;
+}
+.name-news p {
+    color: #555555;
+    font-size: 15px;
+
+}
+
+.name-bus p {
+    opacity: .97;
+    font-size: 15px;
+    color: #555555;
+}
+
+.vehicles__swiper {
+    border: 1px solid #eeeeee;
+}
+
+.price-bus p {
+    color: #005383;
+    font-weight: 600;
+}
+.price-bus p span {
+    color: #222;
+    font-size: 13px;
+}
+
+.btn.btn-select {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    padding: 8px 25px;
+    background: #d2d137;
+    border-color: #d2d137;
+    border-radius: unset;
+}
+
+.btn.btn-select::after {
+    content: '';
+    width: 100px;
+    height: 105px;
+    top: -40px;
+    right: -23px;
+    position: absolute;
+    background-size: 3px 3px;
+    z-index: 0;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+}
+
+.btn.btn-select::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(
+90deg
+, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.2) 100%, white 100%);
+    transition: all .2s ease-in-out;
+}
+
+.bottom-info-content {
+    column-count: 2;
+    padding: 0 30px;
+    border-top: 2px solid #dddddd;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.bottom-info-content span {
+    padding: 4px;
+    display: block;
+    font-size: 13px;
+    color: #222;
+}
+.vehicles__swiper {
+    position: relative;
+    margin-top: 60px;
+}
+
+.vehicles__swiper:hover {
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%);
+    transition: 0.4s all;
+}
+
+.img-hover {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    z-index: 1;
+    transition: height .3s ease-in-out;
+
+}
+
+.img-hover a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.img-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: .95;
+    z-index: 1;
+    background-color: #005383!important;
+}
+.vehicles__swiper:hover .img-hover {
+    height: 253px !important;
+}
+
+.wekar {
     padding-bottom: 500px;
+}
+
+.img-wekar {
+    margin-top: 200px;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.box:hover {
+    background-color: #005383;
+    color: #fff;
+    transition: 0.4s;
+}
+
+
+.box-icon i {
+    font-size: 40px;
+}
+.box-content{
+    margin-left: 20px;
+    border-left: 2px solid #d3d126;
+    padding-left: 15px;
+}
+
+.box-content h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.box-content span {
+    font-size: 14px;
+
+    opacity: .97;
+}
+
+.service-right {
+    margin-left: 30px;
+}
+
+
+
+
+.vehicles {
+    padding-bottom: 100px;
+}
+
+.top-info-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+
+.news__swiper {
+    border: 1px solid #eeeeee;
+}
+.avt-info {
+    align-items: center;
+    padding: 20px;
+}
+.avt-info::after {
+    content: '';
+    width: 100px;
+    height: 105px;
+    top: 21px;
+    right: 17px;
+    position: absolute;
+    background-size: 3px 3px;
+    z-index: 0;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+}
+
+.img__swiper2 {
+    padding: 0 20px;
+}
+
+.avt-info img {
+    width: 14%;
+    border-radius: 50%;
+}
+
+.avt-info p {
+    margin-left: 20px;
+}
+.post-date {
+    margin-top: 20px;
+}
+
+.top-info-news {
+    padding: 0 20px;
+    margin-top: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.news__swiper {
+    position: relative;
+    margin-top: 60px;
+}
+
+.news__swiper:hover {
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%);
+    transition: 0.4s all;
+}
+.post-date {
+    padding: 10px;
+}
+.post-date span {   
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.footer {
+    background: #141414;
 }
