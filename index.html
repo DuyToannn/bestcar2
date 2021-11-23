@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/tailwind.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <title>BestBus</title>
 </head>
 
@@ -23,9 +36,9 @@
                 <div class="header__top-left flex">
                     <div class="left-address">
                         <i class="fal fa-thumbtack text-yellowd3 font-medium"></i>
-                        <span class="text-white text-opacity-70 m-5">Fairview Ave, El Monte, CA 91732 </span>
+                        <span class="text-white text-opacity-70 m-3">Fairview Ave, El Monte, CA 91732 </span>
                     </div>
-                    <div class="left-email">
+                    <div class="left-address">
                         <i class="far fa-envelope text-yellowd3 font-medium"></i>
                         <span class="text-white text-opacity-70">rental@my-domain.com</span>
                     </div>
@@ -55,8 +68,9 @@
                     </div>
                     <div class="nav__mega lg-max:hidden">
                         <ul class="nav__mega-menu flex text-white font-medium">
-                            <li class="menu__list px-5"><a href="" class="hover:text-yellowd3 transition">Home</a></li>
-                            <li class="menu__list px-5 relative"><a href="" class="hover:text-yellowd3 transition">Our Fleet<i class="fas fa-caret-down pl-1"></i></a>
+                            <li class="menu__list px-4"><a href="" class="transition">Home</a></li>
+                            <li class="menu__list px-4 relative"><a href="" class="hover:text-yellowd3 transition">Our
+                                    Fleet<i class="fas fa-caret-down pl-1"></i></a>
                                 <div class="mega-group1 absolute flex top-11">
                                     <ul>
                                         <li><a href="" class=" w-full min-w-150 block">Listing Page</a></li>
@@ -65,16 +79,20 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="menu__list px-5"><a href="" class="hover:text-yellowd3 transition">About Us</a></li>
-                            <li class="menu__list px-5 relative"><a href="" class="hover:text-yellowd3 transition">News<i class="fas fa-caret-down pl-1"></i></a>
+                            <li class="menu__list px-4"><a href="" class="hover:text-yellowd3 transition">About Us</a>
+                            </li>
+                            <li class="menu__list px-4 relative"><a href="" class="transition">News<i
+                                        class="fas fa-caret-down pl-1"></i></a>
                                 <div class="mega-group1 absolute flex top-11">
                                     <ul>
-                                        <li><a href="#" class="hover:text-yellowd3 transition w-full min-w-150 block">News Clasic</a></li>
-                                        <li><a href="#" class="hover:text-yellowd3 transition w-full min-w-150 block">Singe Post</a></li>
+                                        <li><a href="#" class="transition w-full min-w-150 block">News
+                                                Clasic</a></li>
+                                        <li><a href="#" class="transition w-full min-w-150 block">Singe
+                                                Post</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="">Contact us</a></li>
+                            <li class="menu__list"><a href="">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="nav__contact flex md-max:hidden">
@@ -101,14 +119,18 @@
 
 
     <!--===========Banner Start================-->
-    <div class="banner flex items-center bg-cover" style="background: url(./img/banner.jpg);">
+    <div class="banner flex items-center bg-cover">
         <div class="container mx-auto">
             <div class="banner__text ">
                 <h1 class="text-white text-6xl font-bold max-w-xl">Easier Way To Make Your Small Moves</h1>
-                <h3 class="text-white text-3xl pt-9">Rent our powerful & automatic transmission<br> delivery vans on lower rates now!</h3>
+                <h3 class="text-white text-3xl pt-9">Rent our powerful & automatic transmission<br> delivery vans on
+                    lower rates now!</h3>
                 <div class="btn-banner mt-9">
-                    <button class="learn-more py-3 px-5 font-semibold bg-yellowd3 hover:bg-white transition">Learn More</button>
-                    <button class="search-vehicle py-3 px-5 font-semibold text-white border border-white ml-6 hover:bg-white transition hover:text-black">Search Vehicle</button>
+                    <button class="learn-more py-3 px-5 font-semibold bg-yellowd3 hover:bg-white transition">Learn
+                        More</button>
+                    <button
+                        class="search-vehicle py-3 px-5 font-semibold text-white border border-white ml-6 hover:bg-white transition hover:text-black">Search
+                        Vehicle</button>
                 </div>
             </div>
         </div>
@@ -116,9 +138,78 @@
 
     <div class="search">
         <div class="container">
-            <form action=""></form>
+            <div class="row text-center form-search align-center">
+                <div class="col-sm-9">
+                    <form action="" class="flex">
+                        <div class="select auto-search">
+                            <span class>Choose A Pickup Location</span>
+                            <select class="form-control" aria-label="Default select example">
+                                <option value="1">District 1</option>
+                                <option value="2">District 2</option>
+                                <option value="3">District 3</option>
+                            </select>
+                            <!-- <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Return to same pickup location
+                                </label>
+                            </div> -->
+                        </div>
+                        <div class="select pick-date">Pickup Date
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="select select-make">
+                            <span>Select Make</span>
+                            <select class="form-control" aria-label="Default select example">
+                                <option value="1">Huyndai</option>
+                                <option value="2">Ford</option>
+                                <option value="3">Cup</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <div class="btn-veshicles">
+                        <button class="btn btn-primary btn-vehicles">Browse Vehicles</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <div class="vehicles">
+        <div class="container">
+            <div class="title-heading text-center mx-auto">
+                <div class="img-title">
+                    <img src="./img/title_img_2x-1.png" alt="">
+                </div>
+                <h4>Large Growing Fleet Of Vans & Trucks</h4>
+                <h2>Newly Added Vehicles</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+
+
 
 </body>
 

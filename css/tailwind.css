@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --yellowd3: #d3d126;
+    --blue00: #005383;
+}
+
+
 .loader-wrapper {
     width: 100%;
     height: 100%;
@@ -23,7 +30,13 @@
 }
 
 .header {
-    background: #005383;
+    background: var(--blue00);
+}
+
+.wrapper {
+    width: 200px;
+    padding: 20px;
+    height: 150px;
 }
 
 .loader-inner {
@@ -38,15 +51,19 @@
     0% {
         transform: rotate(0deg);
     }
+
     25% {
         transform: rotate(180deg);
     }
+
     50% {
         transform: rotate(180deg);
     }
+
     75% {
         transform: rotate(360deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -56,15 +73,19 @@
     0% {
         height: 0%;
     }
+
     25% {
         height: 0%;
     }
+
     50% {
         height: 100%;
     }
+
     75% {
         height: 100%;
     }
+
     100% {
         height: 0%;
     }
@@ -109,7 +130,124 @@
 }
 
 .banner {
+    background: url(../img/banner.jpg);
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 80vh;
     background-position: center;
+}
+
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+
+.left-address {
+    color: var(--yellowd3);
+}
+
+.nav__contact div i {
+    color: var(--yellowd3);
+}
+
+.learn-more {
+    background-color: var(--yellowd3);
+}
+
+.menu__list a:hover {
+    color: var(--yellowd3);
+}
+
+/*================= Search ================== */
+.search {
+    padding-bottom: 100px;
+}
+
+.form-search {
+    padding: 50px 0;
+}
+
+.select.auto-search {
+    width: 43%;
+}
+
+.auto-search span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.pick-date {
+    width: 36%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.select-make span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.form-select {
+    width: 100%;
+}
+
+.form-check {
+    margin-top: 20px;
+}
+
+.form-check-label {
+    opacity: .7;
+}
+
+.select {
+    margin-right: 15px;
+    text-align: left;
+}
+
+.select-make {
+    width: 30%;
+}
+
+.form-control {
+    height: 50px !important;
+}
+
+.form-search {
+    padding: 50px;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 0 20px 0 rgb(82 76 76 / 28%);
+    border-top: 5px solid #c7c525;
+}
+
+.btn.btn-vehicles {
+    font-size: 18px;
+    color: #000;
+    background-color: var(--yellowd3);
+    padding: 15px 30px;
+    margin-right: 100px;
+    border-color: var(--yellowd3);
+}
+
+.img-title {
+    max-width: 115px;
+    margin: 0 auto;
+}
+
+.title-heading h4 {
+    font-size: 16px;
+    color: #888;
+}
+
+.title-heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #222;
+}
+
+.vehicles {
+    padding-bottom: 500px;
 }
