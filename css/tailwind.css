@@ -531,4 +531,72 @@ a{
 
 .footer {
     background: #141414;
+    padding: 100px 0;
+}
+
+.footer__title h5 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.footer__title p {
+    margin-top: 50px;
+    font-size: 15px;
+    opacity: .7;
+    color: #fff;
+}
+
+.footer__title span {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.social-ft {
+    margin-top: 20px;
+}
+
+.social-ft ul li {
+    padding-right: 7px;
+}
+
+.social-ft ul li a {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    background-color: #2c2c2c;
+}
+
+.social-ft ul li a i{
+    font-size: 18px;
+}
+
+.textwiget {
+    padding-top: 30px;
+}
+.textwiget li {
+    padding-top: 10px;
+}
+.textwiget li a {
+    font-size: 14px;
+    color: #fff;
+    opacity: .7;
+}
+
+.wiget-contact {
+    padding-top: 10px;
+}
+.wiget-contact i  {
+    font-size: 28px;
+}
+
+.footer-contact {
+    margin-top: 44px;
 }
