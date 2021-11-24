@@ -1,0 +1,56 @@
+@media screen and (max-width:800px) {
+    .header__top {
+        display: none;
+    }
+
+    .nav__mega {
+        display: none;
+    }
+
+    .nav__contact {
+        display: none;
+    }
+    .btn-humbager {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .header__bottom-nav {
+        padding: 0px 40px;
+    }
+
+    .banner {
+        background-position: left ;
+    }
+
+    .banner__text {
+        text-align: center;
+    }
+
+    .banner__text h1{
+        margin-right: auto!important;
+        margin-left: auto!important;
+    }
+
+    .learn-more {
+        display: none;
+    }
+
+    .form-input {
+        display: unset !important;
+    }
+
+    .select.auto-search {
+        width: 100%;
+    }
+
+    .pick-date {
+        width: 100%;
+    }
+
+    .select-make {
+        width: 100%;
+    }
+
+}

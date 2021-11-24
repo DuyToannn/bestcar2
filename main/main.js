@@ -7,10 +7,16 @@ $(window).on("load",function(){
 });
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    800: {
+        slidesPerView: 3,
+        spaceBetween: 40
+    }}
+
 });

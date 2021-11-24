@@ -535,10 +535,22 @@ a{
 }
 
 .footer__title h5 {
+    position: relative;
     font-size: 20px;
     color: #fff;
     font-weight: 100;
     text-transform: uppercase;
+}
+
+.footer__title h5::after {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #d3d126;
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
 }
 
 .footer__title p {
@@ -594,9 +606,32 @@ a{
     padding-top: 10px;
 }
 .wiget-contact i  {
-    font-size: 28px;
+    font-size: 40px;
 }
 
 .footer-contact {
     margin-top: 44px;
+}
+
+.footer__title3 h5 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.wiget-contact {
+    display: flex;
+    align-items: center;
+}
+
+.wiget-contact i {
+    color: #fff;
+}
+
+.wiget-contact .text-top {
+    font-size: 15px;
+    color: #fff;
+    opacity: .7;
+    padding-left: 10px;
 }
